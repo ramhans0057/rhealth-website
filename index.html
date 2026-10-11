@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#174b37"><meta name="description" content="Rhealth by Ramhans Care — Ramhans Bone and Joint Clinic. Consultation timings, digital X-ray, facilities and contact.">
+<title>Ramhans Bone and Joint Clinic | Rhealth</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--green:#174b37;--deep:#0b3024;--gold:#d98a08;--cream:#fbf8f1;--ink:#1b3028;--muted:#5b6c62;--line:#e5e9e4}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:"DM Sans","Noto Sans Devanagari",Arial,sans-serif;color:var(--ink);background:#fff}a{text-decoration:none;color:inherit}
+.container{width:min(1160px,calc(100% - 40px));margin:auto}
+.top{background:var(--deep);color:#e5f1e9;font-size:12px;padding:9px 0}.top .container{display:flex;justify-content:space-between;gap:12px}
+header{background:#fff;position:sticky;top:0;z-index:10;border-bottom:1px solid var(--line);box-shadow:0 2px 10px #00000008}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:10px 0}.identity{display:flex;align-items:center;gap:12px;min-width:0}
+.identity img{width:100px;height:72px;object-fit:contain}.identity strong{display:block;color:var(--green);font-size:20px;letter-spacing:.07em}.identity small{display:block;font-size:12px;color:#98610c;letter-spacing:.12em;font-weight:800}
+.navlinks{display:flex;align-items:center;gap:23px;font-size:15px;font-weight:700}.navlinks a:hover{color:var(--gold)}
+.button{display:inline-flex;align-items:center;justify-content:center;gap:8px;border-radius:8px;padding:13px 19px;font-weight:800;font-size:16px;transition:transform .2s;cursor:pointer}.button:hover{transform:translateY(-2px)}
+.gold{background:var(--gold);color:#fff}.white-outline{border:1px solid #ffffff85;color:#fff}.green{background:var(--green);color:#fff}
+.hero{position:relative;overflow:hidden;background:linear-gradient(90deg,#103b2af7 0%,#174b37e8 44%,#174b37b5 100%),url("assets/doctor-patient-illustration.jpg") center right / cover no-repeat;color:white}
+.hero:before{content:"";position:absolute;width:700px;height:700px;border:1px solid #ffffff20;border-radius:50%;right:-240px;top:-300px;box-shadow:0 0 0 90px #ffffff08,0 0 0 180px #ffffff04}
+.hero-inner{position:relative;padding:68px 0 72px;display:grid;grid-template-columns:1.1fr .9fr;gap:50px;align-items:center}
+.kicker{font-size:12px;text-transform:uppercase;letter-spacing:.2em;font-weight:800;color:#f4b955}.hero h1{font-size:clamp(42px,5.3vw,72px);line-height:1.03;letter-spacing:-.055em;margin:17px 0 18px;max-width:670px}
+.hero h1 span{color:#f0aa36}.hero .lead{color:#e0ede5;font-size:19px;line-height:1.75;max-width:550px}
+.hero .hi{font-size:17px;color:#f5d5a3;font-weight:600}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.hours{background:#fff;color:var(--ink);border-radius:18px;padding:27px;box-shadow:0 24px 65px #001b124a}
+.hours .label{color:var(--gold);font-weight:800;letter-spacing:.13em;text-transform:uppercase;font-size:11px}.hours h2{font-size:27px;color:var(--green);margin:8px 0 19px}
+.hour-row{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:14px 0;border-bottom:1px solid var(--line)}
+.hour-row span{font-size:15px;color:var(--muted)}.hour-row strong{font-size:18px;color:var(--green);text-align:right}
+.notice{background:#fff6e5;border-left:4px solid var(--gold);padding:13px 15px;border-radius:5px;margin-top:18px;font-size:15px;line-height:1.6}.notice b{display:block;color:#925b00}.updated{color:#758177;font-size:11px;margin-top:12px}
+.quickstrip{background:var(--cream);border-bottom:1px solid #f0e9d9}.quickgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:0}
+.quick{padding:22px 18px;border-right:1px solid #e7ddca;display:flex;align-items:center;gap:13px}.quick:last-child{border:0}.quick .sym{font-size:28px}.quick b{display:block;color:var(--green);font-size:15px}.quick small{color:var(--muted);font-size:12px}
+section{padding:76px 0}.eyebrow{font-size:12px;text-transform:uppercase;letter-spacing:.18em;color:#a96d10;font-weight:800}
+.section-title{font-size:clamp(30px,3.5vw,43px);letter-spacing:-.045em;color:var(--green);line-height:1.15;margin:11px 0 12px}.intro{color:var(--muted);font-size:17px;line-height:1.7;margin:0 0 29px;max-width:650px}
+.services{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.service{padding:23px 20px;border:1px solid var(--line);border-radius:13px;background:#fff;transition:box-shadow .2s,border-color .2s}.service:hover{border-color:#d4b276;box-shadow:0 10px 28px #183a2411}.service .icon{font-size:29px;display:block;margin-bottom:18px}.service h3{color:var(--green);font-size:19px;margin:0 0 7px}.service p{font-size:15px;color:var(--muted);margin:0}
+.soft{background:#f7f9f5}.doctor-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.doctor{background:white;border:1px solid var(--line);border-radius:14px;overflow:hidden}.doctor-top{padding:24px 25px;border-top:5px solid var(--gold)}.doctor-top .role{font-size:11px;color:#b17a1c;font-weight:800;letter-spacing:.12em;text-transform:uppercase}.doctor h3{font-size:23px;color:var(--green);margin:9px 0 6px}.doctor p{color:var(--muted);margin:0;font-size:15px}.doctor-bottom{padding:16px 25px;background:#f2f6f0;display:flex;justify-content:space-between;gap:10px;align-items:center}.doctor-bottom strong{color:var(--green)}.doctor-bottom span{font-size:12px;color:var(--muted)}
+.fee{margin-top:17px;background:#fff7e7;border:1px solid #f2dfb9;border-radius:12px;padding:17px 22px;display:flex;align-items:center;justify-content:space-between;gap:12px}.fee strong{color:var(--green);font-size:23px}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center}.values{display:grid;grid-template-columns:1fr 1fr;gap:12px}.value{background:var(--cream);padding:19px;border-left:3px solid var(--gold);font-weight:800;font-size:16px}.about-copy{color:var(--muted);font-size:17px;line-height:1.85}
+.contact-section{background:var(--deep);color:#fff}.contact-section .section-title{color:white}.contact-section .intro{color:#c8dfd0}.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:38px;align-items:center}
+.contact-card{background:#ffffff12;border:1px solid #ffffff35;border-radius:15px;padding:26px}.contact-item{padding:13px 0;border-bottom:1px solid #ffffff2b}.contact-item:last-child{border:0}.contact-item small{display:block;color:#c4d9ca;font-size:12px;margin-bottom:4px}.contact-item strong{font-size:19px}.contact-buttons{display:flex;gap:10px;flex-wrap:wrap;margin-top:23px}
+footer{background:#08251b;color:#bcd4c4;padding:24px 0;font-size:12px}.foot{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+@media(max-width:920px){.hero-inner{grid-template-columns:1fr;gap:26px;padding:50px 0}.hours{max-width:680px}.services{grid-template-columns:repeat(2,1fr)}.about-grid,.contact-grid{grid-template-columns:1fr}.navlinks a:not(.button){display:none}}
+@media(max-width:600px){.container{width:calc(100% - 30px)}.top{font-size:10px}.top .container span:last-child{display:none}.identity img{width:77px;height:60px}.identity strong{font-size:16px}.identity small{font-size:9px}.navlinks .button{padding:10px 11px;font-size:11px}.hero-inner{padding:43px 0 45px}.hero h1{font-size:45px}.hero .lead{font-size:17px}.hours{padding:21px}.hour-row strong{font-size:16px}.quickgrid{grid-template-columns:1fr}.quick{border-right:0;border-bottom:1px solid #e7ddca;padding:13px 10px}.quick:last-child{border:0}section{padding:51px 0}.services{gap:10px}.service{padding:17px 13px}.service h3{font-size:17px}.doctor-grid,.values{grid-template-columns:1fr}.doctor-bottom{display:block}.doctor-bottom span{display:block;margin-top:5px}.fee{align-items:start;flex-direction:column}}
+@media(max-width:920px){.hero{background-position:65% center}.hero-inner{background:linear-gradient(90deg,#0d392cc9,#174b3785);border-radius:12px}}
+</style></head>
+<body><div class="top"><div class="container"><span>Ramhans Bone and Joint Clinic</span><span>Move better, live better · बेहतर चलें, बेहतर जियें</span></div></div>
+<header><div class="container nav"><a class="identity" href="#home"><img src="assets/rhealth-logo.png" alt="Original Rhealth by Ramhans Care logo"><span><strong>RAMHANS</strong><small>BONE AND JOINT CLINIC</small></span></a><nav class="navlinks" aria-label="Main navigation"><a href="#facilities">Facilities</a><a href="#doctors">Doctors</a><a href="#about">About</a><a href="#contact">Contact</a><a class="button green" href="#contact">Book / Enquire ↗</a></nav></div></header>
+<main><div class="hero" id="home"><div class="container hero-inner"><div><div class="kicker">Ramhans Bone and Joint Clinic</div><h1>Move Better,<br><span>Live Better.</span></h1><div class="hi" lang="hi">बेहतर चलें, बेहतर जियें</div><p class="lead">Compassionate bone and joint care, built on trust. Find consultation timings, digital X-ray availability, and clinic facilities in one place.</p><div class="hero-actions"><a class="button gold" href="#contact">Book an Appointment ↗</a><a class="button white-outline" href="#facilities">Explore Facilities ↓</a></div></div>
+<aside class="hours"><div class="label">Clinic information · आज की जानकारी</div><h2>Today's clinic timings</h2>
+<div class="hour-row"><span>Working hours<br>खुलने का समय</span><strong id="opening">10:00 AM – 8:00 PM</strong></div>
+<div class="hour-row"><span>Doctor consultation<br>परामर्श समय</span><strong id="consultation">5:00 PM – 8:00 PM</strong></div>
+<div class="hour-row"><span>Digital X-ray<br>डिजिटल एक्स-रे</span><strong id="xray">10:00 AM – 8:00 PM</strong></div>
+<div class="notice"><b>Today's notice</b><span id="notice">Please confirm today's doctor availability before visiting.</span></div>
+<div class="updated" id="updated">Schedules are subject to confirmation.</div></aside></div></div>
+<div class="quickstrip"><div class="container quickgrid"><div class="quick"><span class="sym">🩻</span><div><b>Digital X-ray</b><small>10:00 AM – 8:00 PM</small></div></div><div class="quick"><span class="sym">🩺</span><div><b>Consultation</b><small>Monday – Saturday, 5–8 PM</small></div></div><div class="quick"><span class="sym">📞</span><div><b>Enquiries & Appointments</b><small id="quickphone">7018730435</small></div></div></div></div>
+<section id="facilities"><div class="container"><div class="eyebrow">Our Facilities · हमारी सुविधाएँ</div><h2 class="section-title">Care for every step forward.</h2><p class="intro">Explore the facilities advertised by Ramhans Bone and Joint Clinic. Availability of individual treatments should be confirmed with the clinic.</p>
+<div class="services">
+<article class="service"><span class="icon">🩺</span><h3>Consultation</h3><p lang="hi">परामर्श</p></article>
+<article class="service"><span class="icon">🩹</span><h3>First Aid & Trauma Care</h3><p lang="hi">प्राथमिक उपचार एवं चोट का इलाज</p></article>
+<article class="service"><span class="icon">🦴</span><h3>Bone & Joint Pain</h3><p lang="hi">हड्डी एवं जोड़ों का दर्द</p></article>
+<article class="service"><span class="icon">🧍</span><h3>Back & Shoulder Pain</h3><p lang="hi">कमर एवं कंधे का दर्द</p></article>
+<article class="service"><span class="icon">🦶</span><h3>POP & Splinting</h3><p lang="hi">प्लास्टर एवं स्प्लिंट</p></article>
+<article class="service"><span class="icon">🩻</span><h3>Digital X-ray</h3><p lang="hi">डिजिटल एक्स-रे</p></article>
+<article class="service"><span class="icon">🩹</span><h3>Dressing & Wound Care</h3><p lang="hi">ड्रेसिंग एवं घाव की देखभाल</p></article>
+<article class="service"><span class="icon">💉</span><h3>Injections</h3><p lang="hi">इंजेक्शन लगाना</p></article>
+<article class="service"><span class="icon">💓</span><h3>ECG</h3><p lang="hi">ई.सी.जी.</p></article>
+<article class="service"><span class="icon">🏥</span><h3>Fracture Care</h3><p lang="hi">फ्रैक्चर का उपचार</p></article>
+<article class="service"><span class="icon">📅</span><h3>Appointments</h3><p lang="hi">समय निर्धारण</p></article>
+<article class="service"><span class="icon">⚕️</span><h3>Procedures / Operations</h3><p lang="hi">प्रक्रियाएँ / ऑपरेशन — उपलब्धता की पुष्टि करें</p></article>
+</div></div></section>
+<section class="soft" id="doctors"><div class="container"><div class="eyebrow">Doctor consultation · डॉक्टर से परामर्श</div><h2 class="section-title">Plan your consultation.</h2><p class="intro">Consultation hours shown on the clinic signboard. Please contact the clinic to confirm individual doctor availability.</p>
+<div class="doctor-grid"><article class="doctor"><div class="doctor-top"><div class="role">Regular consultation</div><h3>Dr. Vikas Bharmauria</h3><p lang="hi">डॉ. विकास भरमौरिया</p></div><div class="doctor-bottom"><strong id="dr1hours">5:00 PM – 8:00 PM</strong><span>Monday – Saturday</span></div></article>
+<article class="doctor"><div class="doctor-top"><div class="role">Visiting consultant</div><h3>Dr. Manu Verma</h3><p lang="hi">डॉ. मनु वर्मा</p></div><div class="doctor-bottom"><strong id="dr2hours">10:00 AM – 2:00 PM</strong><span>Sunday only</span></div></article></div>
+<div class="fee"><span><b>OPD consultation fee</b><br><small>परामर्श शुल्क · Please confirm before visiting</small></span><strong id="fee">₹100</strong></div></div></section>
+<section id="about"><div class="container about-grid"><div><div class="eyebrow">Our commitment</div><h2 class="section-title">Compassionate care. Clear guidance.</h2><p class="about-copy">Ramhans Bone and Joint Clinic aims to make it easier to find information about consultations, bone and joint concerns, diagnostic facilities and clinic timings. Our approach is guided by four commitments displayed at the clinic.</p></div><div class="values"><div class="value">⚖️ Ethical Practice</div><div class="value">📋 Competent Treatment</div><div class="value">🛡️ Trusted Care</div><div class="value">🤝 Transparent Advice</div></div></div></section>
+<section class="contact-section" id="contact"><div class="container contact-grid"><div><div class="eyebrow" style="color:#f3bb63">Visit our clinic</div><h2 class="section-title">We're here when you need us.</h2><p class="intro">Call for appointment enquiries, doctor availability, X-ray services, or today's updated timings.</p><div class="contact-buttons"><a class="button gold" id="callbtn" href="tel:+917018730435">Call the Clinic ↗</a><a class="button white-outline" id="mapbtn" href="https://www.google.com/maps/search/?api=1&query=Jadla%20Kohri%20Main%20Market%20Himachal%20Pradesh" target="_blank" rel="noopener">Get Directions ↗</a></div></div><div class="contact-card"><div class="contact-item"><small>Clinic name</small><strong>Ramhans Bone and Joint Clinic</strong></div><div class="contact-item"><small>Address · पता</small><strong id="address">Jadla Kohri, Main Market</strong></div><div class="contact-item"><small>Phone · फ़ोन</small><strong id="phone">7018730435</strong></div><div class="contact-item"><small>Holiday OPD</small><span id="holiday">Available on request — please confirm by phone</span></div><div class="contact-buttons" id="whatsapp-holder" hidden><a id="whatsapp" class="button gold" href="#">WhatsApp ↗</a></div></div></div></section>
+</main><footer><div class="container foot"><span>© <span id="year">2026</span> Ramhans Bone and Joint Clinic</span><span>Move better, live better · बेहतर चलें, बेहतर जियें</span></div></footer>
+<script>
+document.getElementById('year').textContent=new Date().getFullYear();
+fetch('schedule.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw new Error('Schedule unavailable');return r.json()}).then(s=>{
+const set=(id,val)=>{if(val!==undefined&&val!==null&&val!=='')document.getElementById(id).textContent=val};
+set('opening',s.openingHours);set('consultation',s.consultationHours);set('xray',s.xrayHours);set('notice',s.todayNotice);set('dr1hours',s.consultationHours);set('dr2hours',s.sundayConsultation);set('fee',s.consultationFee);set('phone',s.phone);set('quickphone',s.phone);set('address',s.address);set('holiday',s.holidayOPD);
+if(s.lastUpdated)set('updated','Updated: '+s.lastUpdated);
+if(s.phone)document.getElementById('callbtn').href='tel:+'+s.phone.replace(/\D/g,'');
+if(s.mapsQuery)document.getElementById('mapbtn').href='https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(s.mapsQuery);
+if(s.whatsapp){document.getElementById('whatsapp').href='https://wa.me/'+s.whatsapp.replace(/\D/g,'');document.getElementById('whatsapp-holder').hidden=false}
+}).catch(()=>{});
+</script></body></html>
